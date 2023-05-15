@@ -1,0 +1,31 @@
+$c-white: #ffffff;
+$c-white-soft: #f8f8f8;
+$c-white-mute: #f2f2f2;
+
+$c-black: #181818;
+$c-black-soft: #222222;
+$c-black-mute: #282828;
+
+$c-indigo: #2c3e50;
+
+$c-divider-lighter-1: rgba(60, 60, 60, 0.05);
+$c-divider-lighter-2: rgba(60, 60, 60, 0.15);
+$c-divider-light-1: rgba(60, 60, 60, 0.29);
+$c-divider-light-2: rgba(60, 60, 60, 0.12);
+$c-divider-dark-1: rgba(84, 84, 84, 0.65);
+$c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+$c-text-light-1: $c-indigo;
+$c-text-light-2: rgba(60, 60, 60, 0.66);
+$c-text-dark-1: $c-white;
+$c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+$c-background: $c-white;
+$c-background-soft: $c-white-soft;
+$c-background-mute: $c-white-mute;
+
+$c-border: $c-divider-light-2;
+$c-border-hover: $c-divider-light-1;
+
+$c-heading: $c-text-light-1;
+$c-text: $c-text-light-1;
