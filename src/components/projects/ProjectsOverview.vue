@@ -95,16 +95,32 @@ function getMostProminentSourceLanguage(): string | undefined {
     font-size: 17px;
     display: inline-block;
     border-radius: 15px;
-    padding: 2px 10px;
+    padding: 2px 10px 2px 32px;
     margin: 5px;
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 10px;
+    }
     &--NEW {
-      background-color: $c-info;;
+      background-color: $c-info;
+      &::before {
+        content: '🆕';
+      }
     }
     &--DELIVERED {
       background-color: $c-success;
+      &::before {
+        content: '🚚';
+      }
     }
     &--COMPLETED {
       background-color: $c-fulfill;
+      &::before {
+        content: '✅';
+      }
     }
   }
 }

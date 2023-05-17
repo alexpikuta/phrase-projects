@@ -22,7 +22,7 @@ defineProps<{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: $c-background-soft;
+  background-color: $c-white-dull;
   flex: 1 1 0;
   padding: 10px;
   border-radius: 5px;
