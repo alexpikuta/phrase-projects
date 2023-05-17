@@ -1,8 +1,4 @@
-enum ProjectStatus {
-  NEW,
-  COMPLETED,
-  DELIVERED
-}
+export type ProjectStatus = 'NEW' | 'COMPLETED' | 'DELIVERED'
 
 export interface Project {
   id: number

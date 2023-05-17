@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { getProjects } from '@/services/api'
+import { getProjects } from '@/services/projectsApi'
 import type { Project } from '@/types/services/Projects'
 
 export const useProjectsStore = defineStore('projects', {
@@ -14,7 +14,7 @@ export const useProjectsStore = defineStore('projects', {
         this.isLoading = true
         this.projects = await getProjects()
       } catch (e) {
-        console.log(e) // Add error handler
+        console.log(e)
       } finally {
         this.isLoading = false
       }
