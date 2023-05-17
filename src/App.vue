@@ -3,17 +3,20 @@
     <MainNav :linkList="navigation" />
   </MainHeader>
 
-  <RouterView />
+  <MainLayout>
+    <RouterView />
+  </MainLayout>
 </template>
 
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import MainHeader from '@/components/containers/MainHeader.vue'
-import MainNav from '@/components/containers/MainNav.vue'
+import MainLayout from './components/containers/MainLayout.vue'
+import MainHeader from '@/components/app/MainHeader.vue'
+import MainNav from '@/components/app/MainNav.vue'
 import type { NavigationLink } from '@/types/components/Header'
 
 const navigation: NavigationLink[] = [
   { title: '🗂️ Projects', route: '/' },
-  { title: '✏️ Add New' , route: '/about' }
+  { title: '✏️ Add New' , route: '/create' }
 ]
 </script>
