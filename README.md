@@ -12,11 +12,14 @@ This project utilizes Vue 3 with Composition API syntax, TypeScript, Pinia, Vite
 
 ## Configuration
 
-Before running the project you need to create .env file in the root directory and add there VITE_APP_GATEWAY_URL variable with your backend API URL. For example:
+Before running the project you need to create .env file in the root directory and add there VITE_APP_GATEWAY_URL variable with your frontend API URL. For example:
 
 ```
-VITE_APP_GATEWAY_URL=http://localhost:8081
+VITE_APP_GATEWAY_URL=http://localhost:5173/api
 ```
+where '5173' is default port for this frontend app.
+
+Also, make sure that you have correctly specified the URL to the backend API inside `vite.config.ts` file.
 
 ## Project Setup
 
